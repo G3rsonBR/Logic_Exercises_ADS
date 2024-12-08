@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios 5</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body onload="createButtons()">
+  <h1>Exercícios do PDF 5 </h1>
+  <div id="exercises5" class="exercises">
+    <h2 class="title_explanation">Exercícios com Manipulação do DOM</h2>
+    <div class="exercise">
+      <h2>Exercício 1 - Alterando Título</h2>
+      <h2 class="title_to_update">Esse título será alterado</h2>
+      <button onclick="updateTitle()">Atualizar texto</button>
+    </div>
+    <div class="exercise">
+      <h2>Exercício 2 - Adicionando Elementos</h2>
+      <button onclick="createItem()">Adicionar Item</button>
+      <ul id="createItem"></ul>
+    </div>
+    <div class="exercise">
+      <h2>Exercício 3 - Mostrar e Esconder Alternadamente</h2>
+      <p id="showParagraph">Esse parágrafo irá ficar oculto se clicar no botão</p>
+      <button onclick="hideOrShowParagraph()">Ocultar/Mostrar</button>
+    </div>
+    <hr>
+
+    <h2 class="title_explanation">Exercícios com Funções</h2>
+    <div class="exercise">
+      <h2>Exercício 1 - Mensagem de Alerta</h2>
+      <button onclick="showAlert()">Clique no botão</button>
+    </div>
+    <div class="exercise">
+      <h2>Exercício 2 - Calculadora de Quadrado</h2>
+      <label for="inputNumber">Digite um número
+        <input id="inputNumber" type="number">
+      </label>
+      <button onclick="powerANumber()">Elevar ao Quadrado</button>
+    </div>
+    <div class="exercise">
+      <h2>Exercício 3 - Conversor de Moeda</h2>
+      <button onclick="converterDolarParaReal()">Clique para converter</button>
+      <p class="dollarValue"></p>
+    </div>
+    <hr>
+
+    <h2 class="title_explanation">Exercícios com Parâmetros</h2>
+    <div class="exercise">
+      <h2>Exercício 1 - Personalizar Mensagens</h2>
+      <button onclick="digaOla()">Clique no botão</button>
+      <p class="digaOla"></p>
+    </div>
+    <div class="exercise">
+      <h2>Exercício 2 - Somador com Entrada do Usuário</h2>
+      <button onclick="getValuesFromUser()">Clique no botão</button>
+    </div>
+    <div class="exercise">
+      <h2>Exercício 3 - Formatação de Texto</h2>
+      <button onclick="formatarTexto()">Clique no botão</button>
+    </div>
+    <hr>
+
+    <h2 class="title_explanation">Exercícios com innerText e innerHTML</h2>
+    <div class="exercise">
+      <h2>Exercício 1 - Texto Dinâmico</h2>
+      <label for="inputText">
+        Digite um texto: <input id="inputText" type="text">
+      </label>
+      <button onclick="textDynamic()">Clique no botão</button>
+      <p class="getTextFromInput"></p>
+    </div>
+    <div class="exercise">
+      <h2>Exercício 2 - Mensagem com Estilo</h2>
+      <p class="textToStyle">Esse Texto será negrito e itálico quando clicar no botão</p>
+      <button onclick="styleText()">Clique no botão</button>
+    </div>
+    <div class="exercise">
+      <h2>Exercício 3 - Lista de Tarefas</h2>
+      <label for="inputTask">
+        <input id="inputTask" type="text" placeholder="Digite uma nova tarefa">
+      </label>
+      <button onclick="addTask()">Adicionar tarefa</button>
+      <ul class="tasksList"></ul>
+    </div>
+    <hr>
+
+    <h2 class="title_explanation">Exercícios com var, const e Classes</h2>
+    <div class="exercise">
+      <h2>Exercício 1 - Declarações Corretas</h2>
+      <p>Essa tarefa usa o Console do navegador.</p>
+    </div>
+    <div class="exercise">
+      <h2>Exercício 2 - Botão Ativar</h2>
+      <button onclick="createActiveClass()">Clique para adicionar class</button>
+      <p id="ativo">Essa tarefa usa o Inspect do navegador.</p>
+    </div>
+  </div>
+  <script src="../exercises/exercises5.js"></script>
+</body>
+</html>
